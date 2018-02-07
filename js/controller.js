@@ -128,7 +128,7 @@
 	Controller.prototype.completeItem = function (id, title) {
         var that = this;
 		if (title.trim()) {
-			that.model.complete(id, {title: title, complete: true}, null);
+			that.model.complete(id, {title: title, completed: true}, null);
 		} else {
 			that.removeItem(id);
 		}

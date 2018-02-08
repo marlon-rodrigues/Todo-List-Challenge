@@ -1,5 +1,7 @@
 function getMinimumUniqueSum(arr) {
     const arrLenght = arr.length;
+    
+    arr.sort();
 
     let sum = arr[0];
     let prev = arr[0];
